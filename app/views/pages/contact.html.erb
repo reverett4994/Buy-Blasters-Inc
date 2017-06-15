@@ -1,0 +1,42 @@
+<div id="map"></div>
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+  function initMap(latitude=40.217,longitude=-74.742,message="") {
+
+    var uluru = {lat: latitude, lng: longitude};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 6,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      animation: google.maps.Animation.DROP
+    });
+
+
+
+  var contentString = message;
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+
+   marker.addListener('click', function() {
+     infowindow.open(map, marker);
+   });
+   $("#showing").text("Showing Latitude "+latitude+" and Logitude "+longitude)
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWLvPvhBVTQDyp3_QsZoc1AbvCPAD1C4k&callback=initMap"></script>
