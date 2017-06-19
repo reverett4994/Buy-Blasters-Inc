@@ -11,7 +11,19 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 </head>
 <body>
-
+<div id="header">
+  <div id="left_header">
+    <%= link_to("/") do %>
+      <img src="/header_logo.png" class="header_logo">
+    <% end %>
+  </div>
+  <ul>
+    <li><a href="/pages/interior">Interior Pest Control</a></li>
+    <li><a href="/pages/exterior">Exterior Pest Control</a></li>
+    <li><a href="/pages/commercial">Commercial Pest Control</a></li>
+    <li><a href="/pages/contact">Contact Us</a></li>
+  </ul>
+</div>
 <%= yield %>
 
 </body>
