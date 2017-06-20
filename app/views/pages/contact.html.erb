@@ -14,6 +14,28 @@
     <p>(609) 298-8778</p>
   </div>
 </div>
+<div id="contact_wrapper_2">
+  <h1>Send us an email</h1>
+  <form action="/send-email"  method="post" id="registration-form">
+    <p>
+      Your Email*<br>
+      <input name="email" data-validation="email" placeholder="Your Email">
+    </p><br>
+
+    <p>
+      Message for us (<span id="pres-max-length">1000</span> characters left)<br>
+      <textarea placeholder="type away!" name="message" id="message"></textarea>
+    </p>
+    <br>
+    <p>
+      <input value="Send Message" type="submit">
+    </p>
+  </form>
+</div>
+
+
+
+
 
 
 
@@ -24,12 +46,27 @@
 
 <script>
 
+ $('#message').restrictLength( $('#pres-max-length') );
+
+$.validate({
+  lang: 'en',
+  modules : 'security',
+  onSuccess : function($form) {
+
+  },
+  onError : function($form) {
+    sweetAlert("Opps!", "Something Was Wrong", "warning");
+    return false; // IF FALSE Will stop the submission of the form
+  }
+});
+
+
 
   function initMap(latitude=40.217,longitude=-74.742,message="") {
 
     var uluru = {lat: latitude, lng: longitude};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 6,
+      zoom: 9,
       center: uluru
     });
     var marker = new google.maps.Marker({

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # get 'email/send_email'
+  post '/send-email' => 'email#send_email'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
