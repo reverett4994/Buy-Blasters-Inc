@@ -396,6 +396,7 @@ hr.style18:before {
 //**********************************************CONTACT PAGE************************************************//
 
 #contact_wrapper{
+  padding: 100px;
 
   h1{
     text-align: center;
@@ -404,13 +405,33 @@ hr.style18:before {
   }
   h2{
     margin-top: 50px;
+    margin-bottom: 5px;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 25vw;
   }
+  p{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 25vw;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 250%;
+  }
+}
+#contact_info{
+
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+
 }
 #map {
  height: 500px;
  width: 500px;
  margin-bottom: 20px;
+ margin-left: 5vw;
+ display: inline-block;
 }
 //**********************************************CONTACT PAGE************************************************//
