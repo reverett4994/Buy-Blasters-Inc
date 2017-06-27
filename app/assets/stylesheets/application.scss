@@ -654,7 +654,7 @@ form{
   -webkit-filter: grayscale(1);
 }
 .com_pic_odd{
-  background-color: red;
+  background-color: #232323;
   width: 17%;
   height: 73%;
   display: inline-block;
@@ -665,7 +665,7 @@ form{
 }
 
 .com_pic_even{
-  background-color: blue;
+  background-color: #232323;
   width: 17%;
   height: 73%;
   display: inline-block;
@@ -740,3 +740,69 @@ form{
   }
 }
 //**********************************************COMMERCIAL PAGE************************************************//
+
+
+
+//**********************************************INTERIOR PAGE************************************************//
+
+
+.exterior_banner{
+  width: 100%;
+  height: 500px;
+  background-image: url('/skunk.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% -1500%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 85px;
+  line-height: 150%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ext_pic_1{
+  background-image: url('/web.jpeg');
+  background-size: cover;
+}
+.int_pic_2{
+  background-image: url('/raccoon.jpeg');
+  background-size: cover;
+}
+.int_pic_3{
+  background-image: url('/1bee.jpg');
+  background-size: cover;
+}
+.int_pic_4{
+  background-image: url('/nest.jpeg');
+  background-size: cover;
+}
+.int_pic_5{
+  background-image: url('/gutter.jpg');
+  background-size: cover;
+}
+
+#ext_foot{
+  max-width: 100%;
+  height: 350px;
+  margin-top: -4px;
+  background-image: url('/grass.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  line-height: 160%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
