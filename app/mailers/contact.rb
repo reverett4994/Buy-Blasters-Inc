@@ -1,5 +1,5 @@
 class Contact < ApplicationMailer
-  default from: "from@example.com"
+  default from: "Bug-Blasters-Inc"
   # layout 'mailer'
 
 
