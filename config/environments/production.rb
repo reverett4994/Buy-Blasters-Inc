@@ -78,14 +78,21 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
 
-  #NEDED TO SEND EMAIL THOUGH DEVOLPMENT
-  config.action_mailer.smtp_settings = {
-    :enable_starttls_auto => true,
-    :address => "smtp.gmail.com",
+
+
+
+  config.action_mailer.default_url_options = { host: 'https://bug-blasters-inc.herokuapp.com/'}
+
+  config.action_mailer.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :domain => 'heroku.com',
+    :address => 'smtp.sendgrid.net',
     :port => 587,
-    :domain => "gmail.com",
-    :authentication => :login,
-    :user_name => ENV.fetch('GMAIL_USERNAME'),
-    :password => ENV.fetch('GMAIL_PASSWORD'),
+    :authentication => :plain,
+    :enable_starttls_auto => true
   }
+
 end
