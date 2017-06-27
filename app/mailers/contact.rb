@@ -7,7 +7,7 @@ class Contact < ApplicationMailer
     @email = email
     @message= message
     @url  = 'http://example.com/login'
-    mail(to: ENV.fetch('GMAIL_USERNAME'), subject: 'Message Recvied from Bug Blaster Site!')
+    mail(to: ENV.fetch('BUG_EMAIL'), subject: 'Message Received from Bug Blaster Site!')
   end
 
 
