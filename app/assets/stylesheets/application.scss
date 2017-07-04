@@ -503,6 +503,7 @@ form{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  max-width: 90%;
   input{
     width: 500px;
     padding: 12px 20px;
@@ -510,13 +511,16 @@ form{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    max-width: 100%;
   }
   textarea{
     width: 500px;
     height: 305px;
+    max-width: 100%;
   }
   p{
     margin: 5px !important;
+    max-width: 100%;
   }
   .form-error{
     color: #ffccd5 !important;
@@ -655,6 +659,7 @@ form{
   filter: grayscale(100%);
   filter: gray;
   -webkit-filter: grayscale(1);
+  min-width: 282px;
 }
 .com_pic_odd{
   background-color: #232323;
@@ -741,6 +746,23 @@ form{
     font-family: 'Open Sans', sans-serif;
     line-height: 200%;
   }
+}
+
+#temp_com_banner{
+  background-image: url("/kitchen_banner.jpg");
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 85px;
+  line-height: 150%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1px;
+  visibility: hidden;
 }
 //**********************************************COMMERCIAL PAGE************************************************//
 
@@ -1047,3 +1069,156 @@ form{
      }
  }
 //**********************************************HOME PAGE************************************************//
+
+
+
+//**********************************************Interior PAGE************************************************//
+
+@media only screen and (max-width: 1400px) {
+    .int_box {
+      width: 100%;
+      display: block;
+      overflow: auto;
+      height:1%;
+
+    }
+    .int_pic_1,.int_pic_2,.int_pic_3,.int_pic_4,.int_pic_5{
+            background-size: 100% auto;
+            margin-bottom: 1vw;
+            background-position: center;
+            min-height: 25vw;
+          }
+    .ext_pic_1,.ext_pic_2,.ext_pic_3,.ext_pic_4,.ext_pic_5{
+            background-size: 100% auto;
+            margin-bottom: 1vw;
+            background-position: center;
+            min-height: 25vw;
+          }
+    .exterior_banner{
+      background-size: 100% 100%;
+      background-position: center;
+      background-attachment: local;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .int_box {
+      p{
+        padding: 0 10px 0 10px;
+      }
+    }
+    #com_text{
+      div{
+        padding: 0 10px 0 10px;
+
+      }
+    }
+    .interior_banner {
+        font-size: 55px;
+    }
+    .exterior_banner {
+      font-size: 55px;
+      height: 350px;
+  }
+    #int_foot,#ext_foot{
+      font-size: 25px;
+      padding: 5px;
+    }
+    #temp_com_banner{
+      font-size: 60px !important;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+      .interior_banner {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+      #ext_foot {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 500px) {
+      #ext_foot {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 400px) {
+      #ext_foot {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  #int_foot{
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #int_foot{
+    font-size: 25px;
+  }
+}
+
+//**********************************************Interior PAGE************************************************//
+
+
+
+//**********************************************Commercial PAGE************************************************//
+
+@media only screen and (max-width: 1270px) {
+  #com_wrapper{
+    display: none;
+  }
+  #temp_com_banner{
+    height: 400px !important;
+    visibility: visible !important;
+  }
+}
+
+
+
+//**********************************************Commercial PAGE************************************************//
+
+
+//**********************************************CONTACT PAGE************************************************//
+
+@media only screen and (max-width: 1500px) {
+  #contact_info{
+    margin-left: -10vw;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  #contact_wrapper{
+    padding: 25px;
+  }
+  #contact_info{
+    margin-left: -15vw;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #map{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 99%;
+  }
+  #contact_info{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    p{
+      display: block;
+    }
+  }
+  #contact_wrapper_2{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+//**********************************************CONTACT PAGE************************************************//
