@@ -927,7 +927,7 @@ form{
     }
     .home_pics span.text-content{
       opacity: 1 !important;
-      margin-left: 35%;
+      margin-left: 25%;
       margin-top: -40vw;
 
     }
@@ -1039,6 +1039,9 @@ form{
            width: 100%;
            max-width: none;
          }
+       }
+       #white_list{
+         font-size: 20px;
        }
      }
  }
