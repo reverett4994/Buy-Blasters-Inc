@@ -21,7 +21,13 @@ html,body{
   max-width: 100%;
   min-width: 100%;
 }
-body{overflow-x: hidden;}
+body{
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 
 #notice{
@@ -1103,7 +1109,18 @@ form{
       background-attachment: local;
     }
 }
-
+@media only screen and (max-width: 1000px) {
+    .interior_banner {
+      background-size: 300% 400%;
+      background-position: center;
+      background-attachment: local;
+    }
+    #int_foot {
+      background-size: 150% 300%;
+      background-position: center;
+      background-attachment: local;
+    }
+}
 @media only screen and (max-width: 600px) {
     .int_box {
       p{
