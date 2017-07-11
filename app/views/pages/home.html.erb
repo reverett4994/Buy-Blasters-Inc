@@ -1,8 +1,11 @@
+<head>
+  <meta name="description" content="Bug Blasters Inc provides pest control for interior and exterior locations across New Jersey and our Exterminators provide wonderful customer service">
+</head>
 <% if flash[:notice]%>
   <div id="notice"><p><%= flash[:notice] %></p></div>
 <%end%>
 <% if false%>
-  <img src="/new_logo.jpg" class="home_icon">
+  <img src="/new_logo.jpg" class="home_icon" alt="Bug Blasters Inc. logo">
 <%end%>
 <div class="home_icon"></div>
 
@@ -22,14 +25,14 @@
 <div id="home_pics_container">
   <div class="home_pics">
     <%= link_to("/interior") do %>
-      <img src="/termite.jpg">
+      <img src="/termite.jpg" alt="termites">
       <span class="text-content"><span>Interior Pest Control</span></span>
     <% end %>
   </div>
 
   <div class="home_pics">
     <%= link_to("/exterior") do %>
-      <img src="/bees.jpeg">
+      <img src="/bees.jpeg" alt="bees">
       <span class="text-content"><span>Exterior Pest Control</span></span>
     <% end %>
   </div>
@@ -38,14 +41,14 @@
 
   <div class="home_pics">
     <%= link_to("/commercial") do %>
-      <img src="/com.jpg">
+      <img src="/com.jpg" alt="cockroach">
       <span class="text-content"><span>Commercial Pest Control</span></span>
     <% end %>
   </div>
 
   <div class="home_pics">
     <%= link_to("/contact") do %>
-      <img src="/map.png">
+      <img src="/map.png" alt="map and directions">
       <span class="text-content"><span>Locate and Contact Us!</span></span>
     <% end %>
   </div>
@@ -152,8 +155,8 @@ comes with knowing your home is secure and free of pests.<br>
 </div>
 <div class="banner members">
   <h1>We're members of...<h1>
-  <img src="/member2.jpg" class="member_icon">
-  <img src="/member1.png" class="member_icon">
-  <img src="/member3.png" class="member_icon">
-  <img src="/member4.jpg" class="member_icon">
+  <img src="/member2.jpg" class="member_icon" alt="New Jersey Pest Management Association">
+  <img src="/member1.png" class="member_icon" alt="National Pest Management Association">
+  <img src="/member3.png" class="member_icon" alt="Wood Destroying Credentialed Inspector">
+  <img src="/member4.jpg" class="member_icon" alt="Termidor Certified Professional">
 </div>
