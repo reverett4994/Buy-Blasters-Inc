@@ -11,9 +11,9 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css"
-    rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="header_logo.ico" />
+  <link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="header_logo.ico" />
+  <%= render partial: "layouts/g_analytics" %>
 </head>
 <body>
 <div id="header">
@@ -55,5 +55,7 @@
   <p>Copyright (c) 2017 Bug Blasters, Inc. - Bordentown, NJ 08505 - (609) 298-8778</p>
 
 </div>
+<%= render partial: "layouts/ganalytics_pageview" %>
+
 </body>
 </html>
