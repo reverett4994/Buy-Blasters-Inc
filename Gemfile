@@ -52,3 +52,7 @@ gem 'sweetalert-rails'
 
 
 gem 'rails_12factor', group: :production
+
+gem 'leaflet-sidebar-rails'
+
+gem "font-awesome-rails"
