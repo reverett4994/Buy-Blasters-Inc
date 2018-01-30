@@ -30,9 +30,9 @@
     <div class="dropdown_div">
       <li class='dropdown_link'><a href="#" onclick="return false;">Prep Sheets</a></li>
       <div class="dropdown_content">
-        <li><a href="#">Bedbug</a></li>
-        <li><a href="#">Bedbug (español)</a></li>
-        <li><a href="#">Roach</a></li>
+        <li><a href="/bedbug.pdf">Bedbug</a></li>
+        <li><a href="/bedbug_esp.pdf">Bedbug (español)</a></li>
+        <li><a href="/roach.pdf">Roach</a></li>
       </div>
     </div>
     <li><a href="/contact">Contact Us</a></li>
@@ -70,29 +70,36 @@
 </html>
 <script type="text/javascript">
 
-$('.dropdown_div').on('mouseleave', function () {
-    if ($(window).width() < 1110) {
-      if ($('#header').height() === 421) {
-        $("#header").css('min-height', 421, 'important');
-        $("#header").css('max-height', 421, 'important');
-        console.log('mobile');
-      } else {
-        $("#header").css('min-height', 310);
-        $("#header").css('max-height', 310);
-      }
-    }
-}).on('mouseenter', function () {
-    if ($(window).width() < 1110) {
-        $("#header").css('min-height', 420);
-        $("#header").css('max-height', 420);
-    }
-});
-
 $('.dropdown_div').on({ 'touchstart' : function(){
-  $("#header").css('min-height', 421, 'important');
-  $("#header").css('max-height', 421, 'important');
+  $("#header").css('min-height', 430, 'important');
+  $("#header").css('max-height', 430, 'important');
   $(".dropdown_content").css('display', 'block', 'important');
 }
 });
+
+$(".dropdown_div").hover(function(){
+  if ($(window).width() < 1120) {
+    if ($('#header').height() != 430) {
+      $("#header").css('min-height', 420);
+      $("#header").css('max-height', 420);
+    }
+  }
+    }, function(){
+      if ($(window).width() < 1120) {
+        if ($('#header').height() == 430) {
+          $("#header").css('min-height', 430, 'important');
+          $("#header").css('max-height', 430, 'important');
+        } else {
+          if ($('#header').height() != 430) {
+            $("#header").css('min-height', 310);
+            $("#header").css('max-height', 310);
+          }
+        }
+      }
+});
+
+
+
+
 
 </script>
